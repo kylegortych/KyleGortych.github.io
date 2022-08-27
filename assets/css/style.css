@@ -1,8 +1,8 @@
-/* 
+/*
   style
   Descript:
   css for home page
- 
+
   File name:     style.css
   Maintainer:    Kyle Gortych
   Created:       05-08-2022
@@ -10,20 +10,21 @@
  */
 
 * {
-  box-sizing: border-box;    
+  box-sizing: border-box;
   margin: 0;
   padding: 0px;
 }
 
 :root {
-  scroll-padding-top: 50px;
+  scroll-padding-top: 30px;
   --darkgray-clr: hsl(0, 0%, 30%);
   --lightgray-clr: hsl(0, 0%, 50%);
   --sky-clr: hsl(205, 100%, 50%);
 }
 
-body {
-  background-color: white;
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 p {
@@ -39,7 +40,7 @@ p {
 .toc {
   background-image: linear-gradient(to top, black, white);
   background-size: cover;
-  height: 450px;
+  height: 500px;
 }
 
 .toc p {
@@ -84,8 +85,8 @@ p {
 }
 
 .top-img {
-  background-image: linear-gradient(hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.5)), url("../gifs/header.gif");
-  height: 50vh;
+  background-image: linear-gradient(hsl(0, 0%, 0%, 0.5), hsl(0, 0%, 0%, 0.5)), url("../images/hero.jpg");
+  height: 50%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -286,7 +287,7 @@ section p {
   main {
     margin: 25px 0px 0px 50px;
   }
-  
+
   header {
 
   }
@@ -301,7 +302,7 @@ section p {
   header, footer {
 
   }
-  
+
   main {
 
   }
