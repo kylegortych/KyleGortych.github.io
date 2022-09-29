@@ -1,0 +1,24 @@
+RewriteEngine On
+Options -Indexes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+RewriteRule ^Resume?$ ./pages/Resume.html
+RewriteRule ^cad-work?$ ./pages/cad-work.html
+RewriteRule ^kicad-work?$ ./pages/kicad-work.html
+RewriteRule ^software-work?$ ./pages/software-work.html
+
+<Files LICENSE>
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(md)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
