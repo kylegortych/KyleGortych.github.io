@@ -1,24 +1,22 @@
 RewriteEngine On
-Options -Indexes
+Options All -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
-RewriteRule ^Resume?$ ./pages/Resume.html
-RewriteRule ^cad-work?$ ./pages/cad-work.html
-RewriteRule ^kicad-work?$ ./pages/kicad-work.html
-RewriteRule ^software-work?$ ./pages/software-work.html
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 
-<Files LICENSE>
-Order allow,deny
-Deny from all
+<Files ./README.md ./LICENSE>
+  Order allow,deny
+  Deny from all
 </FilesMatch>
 
 <FilesMatch "^\.">
-Order allow,deny
-Deny from all
+  Order allow,deny
+  Deny from all
 </FilesMatch>
 
-<FilesMatch "\.(md)$">
-Order allow,deny
-Deny from all
-</FilesMatch>
+<Directory ~ "\assets">
+  Order allow,deny
+  Deny from all
+</Directory>
