@@ -250,6 +250,12 @@ section p {
   background-color: black;
 }
 
+.pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* media queri | mobile to desktop */
 
 @media screen and (min-width: 768px) {
