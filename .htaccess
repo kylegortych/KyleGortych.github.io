@@ -3,8 +3,6 @@ Options All -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
-RewriteRule ^index\.html$ / [R=301,L]
-
 <Files ./README.md ./LICENSE>
   Order allow,deny
   Deny from all
