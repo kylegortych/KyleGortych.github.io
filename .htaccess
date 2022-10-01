@@ -5,12 +5,17 @@ RewriteRule ^([^.]+)$ $1.html [NC,L]
 
 RewriteRule (^|/)assets(/|$) - [F]
 
-<Files .htaccess README.md LICENSE>
+<Files .htaccess>
 Order allow,deny
 Deny from all
 </Files>
 
-<FilesMatch "^\.">
+<Files README.md>
 Order allow,deny
 Deny from all
-</FilesMatch>
+</Files>
+
+<Files LICENSE>
+Order allow,deny
+Deny from all
+</Files>
