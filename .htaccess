@@ -3,19 +3,12 @@ Options ALL -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
-RewriteRule (^|/)assets(/|$) - [F]
+RewriteRule ^.*/assets/.*$ - [F]
+RewriteRule ^.*/.htaccess/.*$ - [F]
+RewriteRule ^.*/README.md/.*$ - [F]
+RewriteRule ^.*/LICENSE/.*$ - [F]
 
-<Files .htaccess>
-Order allow,deny
-Deny from all
-</Files>
-
-<Files README.md>
-Order allow,deny
-Deny from all
-</Files>
-
-<Files LICENSE>
-Order allow,deny
-Deny from all
-</Files>
+# <Files .htaccess>
+# Order allow,deny
+# Deny from all
+# </Files>
