@@ -3,10 +3,10 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
-RewriteRule ^.*/assets/.*$ - [F]
-RewriteRule ^.*/.htaccess - [F]
-RewriteRule ^.*/README.md - [F]
-RewriteRule ^.*/LICENSE - [F]
+RewriteRule ^.*/assets/.*$ - [R=403]
+RewriteRule ^.*/.htaccess - [R=403]
+RewriteRule ^.*/README.md - [R=403]
+RewriteRule ^.*/LICENSE - [R=403]
 
 # <Files .htaccess>
 # Order allow,deny
