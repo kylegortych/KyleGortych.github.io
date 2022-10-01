@@ -1,12 +1,12 @@
 RewriteEngine On
-Options ALL -Indexes
+#Options ALL -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
 RewriteRule ^.*/assets/.*$ - [F]
-RewriteRule ^.*/.htaccess/.*$ - [F]
-RewriteRule ^.*/README.md/.*$ - [F]
-RewriteRule ^.*/LICENSE/.*$ - [F]
+RewriteRule ^.*/.htaccess - [F]
+RewriteRule ^.*/README.md - [F]
+RewriteRule ^.*/LICENSE - [F]
 
 # <Files .htaccess>
 # Order allow,deny
