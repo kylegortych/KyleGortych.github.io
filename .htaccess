@@ -1,19 +1,16 @@
 RewriteEngine On
-Options All -Indexes
+Options ALL -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
+RewriteRule (^|/)assets(/|$) - [F]
+
 <Files .htaccess README.md LICENSE>
-  Order allow,deny
-  Deny from all
+Order allow,deny
+Deny from all
 </Files>
 
 <FilesMatch "^\.">
-  Order allow,deny
-  Deny from all
+Order allow,deny
+Deny from all
 </FilesMatch>
-
-<Directory ~ "\assets">
-  Order allow,deny
-  Deny from all
-</Directory>
