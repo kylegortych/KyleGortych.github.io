@@ -33,6 +33,7 @@ p {
 
 .links {
   text-decoration: none;
+  font-weight: bold;
   color: hsl(30, 100%, 50%);
   cursor: pointer;
 }

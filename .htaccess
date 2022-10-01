@@ -3,10 +3,10 @@ Options All -Indexes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.html [NC,L]
 
-<Files ./README.md ./LICENSE>
+<Files .htaccess README.md LICENSE>
   Order allow,deny
   Deny from all
-</FilesMatch>
+</Files>
 
 <FilesMatch "^\.">
   Order allow,deny
