@@ -6,7 +6,7 @@
   File name:     style.css
   Maintainer:    Kyle Gortych
   Created:       05-08-2022
-  Last Modified: 05-17-2022
+  Last Modified: 10-04-2022
  */
 
 * {
@@ -81,8 +81,8 @@ p {
 .toc img {
   display: block;
   margin: 50px auto 20px auto;
-  height: auto;
-  width: 150px;
+  height: 175px;
+  width: 175px;
 }
 
 .top-img {
