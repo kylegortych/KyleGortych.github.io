@@ -67,14 +67,15 @@ body, html {
 }
 
 li {
-  display: inline;
+  list-style: none;
+  margin: 1em;
 }
 
 a {
   font-size: 1.5rem;
   text-decoration: none;
   color: white;
-  padding: 0.6em;
+  padding: 0.2em;
 }
 
 a:hover{
@@ -92,8 +93,10 @@ a:hover{
 
 /* media queries | mobile first*/
 
-/*
 @media (min-width: 40em) {
+li {
+  display: inline;
+  margin: 0;
+}
   
 }
-*/
