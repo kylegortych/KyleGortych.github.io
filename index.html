@@ -5,8 +5,8 @@ Home page
 
 File name:     index.html
 Maintainer:    Kyle Gortych
-Created:       05-08-2022
-Last Modified: 1-07-2023
+Created:       05/08/2022
+Last Modified: 01/12/2023
 -->
 
 <!DOCTYPE html>
@@ -26,52 +26,33 @@ Last Modified: 1-07-2023
 </head>
 
 <body>
-  <div class="toc">
-    <h2>Table of Contents</h2>
-    <nav>
-      <ul>
-        <li><a href="#first-subheading">About This Site</a></li>
-        <li><a href="#second-subheading">Currently Reading/Studying</a></li>
-        <li><a href="#third-subheading">Web Pages</a></li>
-      </ul>
-    </nav>
-    <img src="./assets/images/my-user-icon-modified.png" alt="img">
-    <p>Maintainer: Kyle Gortych<br>Last Modified: 1/7/2023</p>
-  </div>
-  <header class="top-img">
-    <h1 class="header-txt">Kyle Gortych's Website</h1>
+  <header class="hero-image">
+    <h1 class="hero-text">Kyle Gortych's Website</h1>
   </header>
-  <nav class="sticky">
-    <ul>
-      <li><a href="./index">Home</a></li>
-      <div class="dropdown">
-        <a class="dropbtn">Pages</a>
-          <div id="myDropdown" class="dropdown-content">
-            <li><a href="./example_work">Sample Work</a></li>
-            <li><a href="">page two</a></li>
-            <li><a href="">page three</a></li>
-          </div>
-      </div>
-      <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="Resume" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
+    <div id="navbar" class="navbar">
+      <ul>
+        <li><a href="./index">Home</a></li>
+        <li><a href="./example_work">Sample Work</a></li>
+        <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="Resume" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  <script src="nav_color_change.js"></script>
 <main>
   <section>
-    <h2 id="first-subheading">About This Site</h2>
+    <h2>About This Site</h2>
     <p>Hello, this is my static web site. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development. Have a look at some of the work I've done.</p>
   </section>
   <br><br>
   <section>
-    <h2 id="second-subheading">Currently Reading/Studying</h2>
+    <h2>Currently Reading/Studying</h2>
     <p>Transpiling Python to Rust <a href="https://medium.com/@konchunas/transpiling-python-to-rust-766459b6ab8f" class="links" target="_blank" rel="noopener noreferrer">link</a></p>
     <p>gif like webm loops <a href="https://schnerring.net/blog/use-obs-and-ffmpeg-to-create-gif-like-screencasts/" class="links" target="_blank" rel="noopener noreferrer">link</a></p>
-    <p>Blank research link <a href="na" class="links" target="_blank" rel="noopener noreferrer">link</a></p>
   </section>
   <br><br>
   <section>
-    <h2 id="third-subheading">Web Pages</h2>
+    <h2>Web Pages</h2>
     <h3>Sample Work</h3>
     <p>This page will show the work I've done.</p>
     <h3>Page Two</h3>
@@ -80,6 +61,12 @@ Last Modified: 1-07-2023
     <p>This will go over .</p>
   </section>
 </main>
-</body>
+<br><br>
+  <footer>
+    <h2>About Me</h2>
+    <img src="./assets/images/my-user-icon-modified.png" alt="img">
+    <p>Maintainer: Kyle Gortych<br>Last Modified: 01/11/2023</p>
+  </footer>
 
+</body>
 </html>

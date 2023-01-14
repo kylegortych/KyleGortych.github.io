@@ -5,8 +5,8 @@ Sample cad work webpage
  
 File name:     cad-work.htm
 Maintainer:    Kyle Gortych
-Created:       05-18-2022
-Last Modified: 01-07-2023
+Created:       05/18/2022
+Last Modified: 01/11/2023
 -->
  
 <!DOCTYPE html>
@@ -17,105 +17,58 @@ Last Modified: 01-07-2023
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sample CAD work">
+  <meta name="description" content="Sample Work">
   <link rel="icon" href="./assets/images/programmer.png" type="png" />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <div class="toc">
-    <h2>Table of Contents</h2>
-    <nav>
-      <ul>
-        <li><a href="#first-subheading">Cad Examples</a></li>
-        <li><a href="#second-subheading">Circuit Board Design</a></li>
-      </ul>
-    </nav>
-    <img src="./assets/images/my-user-icon-modified.png" alt="img">
-    <p>Maintainer: Kyle Gortych<br>Last Modified: 1/7/2023</p>
-  </div>
-  <header class="top-img">
-    <h1 class="header-txt">Gallery of My Work</h1>
+  <header class="hero-image">
+    <h1 class="hero-text">Gallery of My Work</h1>
   </header>
-  <nav class="sticky">
-    <ul>
-      <li><a href="./index">Home</a></li>
-      <div class="dropdown">
-        <a class="dropbtn">Pages</a>
-          <div id="myDropdown" class="dropdown-content">
-            <li><a href="./example_work">Sample Work</a></li>
-            <li><a href="">page two</a></li>
-            <li><a href="">page three</a></li>
-          </div>
-      </div>
-      <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-      <li><a href="Resume" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
+    <div id="navbar" class="navbar">
+      <ul>
+        <li><a href="./index">Home</a></li>
+        <li><a href="./example_work">Sample Work</a></li>
+        <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="Resume" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  <script src="nav_color_change.js"></script>
 <main>
   <section>
-    <h2 id="first-subheading">Cad Examples</h2>
+    <h2>Cad Examples</h2>
     <p>note: Only one looped video. Others are place holders</p>
-    <div class="slider">
-      <span id="slide-1"></span>
-      <span id="slide-2"></span>
-      <span id="slide-3"></span>
-      <div class="image-container">
         <video autoplay loop muted width="500" height="300" class="slide">
           <source type="video/webm" src="./assets/gifs/gears.webm" />
         </video>
         <img src="" class="slide" alt="img" width="500" height="300" />
         <img src="" class="slide" alt="img" width="500" height="300" />
-      </div>
-      <div class="buttons">
-        <a href="#slide-1"></a>
-        <a href="#slide-2"></a>
-        <a href="#slide-3"></a>
-      </div>
-    </div>
     <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
   <section>
-    <h2 id="second-subheading">Circuit Board Design</h2>
-    <div class="slider">
-      <span id="slide-4"></span>
-      <span id="slide-5"></span>
-      <span id="slide-6"></span>
-      <div class="image-container">
+    <h2>Circuit Board Design</h2>
         <img src="" class="slide" alt="img" width="500" height="300" />
         <img src="" class="slide" alt="img" width="500" height="300" />
         <img src="" class="slide" alt="img" width="500" height="300" />
-      </div>
-      <div class="buttons">
-        <a href="#slide-4"></a>
-        <a href="#slide-5"></a>
-        <a href="#slide-6"></a>
-      </div>
-    </div>
     <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
   <section>
-    <h2 id="second-subheading">Software Examples</h2>
-    <div class="slider">
-      <span id="slide-7"></span>
-      <span id="slide-8"></span>
-      <span id="slide-9"></span>
-      <div class="image-container">
+    <h2>Software Examples</h2>
         <img src="" class="slide" alt="img" width="500" height="300" />
         <img src="" class="slide" alt="img" width="500" height="300" />
         <img src="" class="slide" alt="img" width="500" height="300" />
-      </div>
-      <div class="buttons">
-        <a href="#slide-7"></a>
-        <a href="#slide-8"></a>
-        <a href="#slide-9"></a>
-      </div>
-    </div>
     <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
 </main>
+
+<br><br>
+
+<footer>
+  <img src="./assets/images/my-user-icon-modified.png" alt="img">
+  <p>Maintainer: Kyle Gortych<br>Last Modified: 01/11/2023</p>
+</footer>
+
 </body>
-
 </html>
-
