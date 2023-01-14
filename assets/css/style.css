@@ -98,5 +98,9 @@ li {
   display: inline;
   margin: 0;
 }
+
+a {
+  padding:  0.6em;
+}
   
 }
