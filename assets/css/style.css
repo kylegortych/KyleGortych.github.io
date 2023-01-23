@@ -35,7 +35,7 @@ body, html {
 
 .hero-image {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/hero.webp");
-  height: 50%;
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  inset: 50% 0 0 50%;
+  inset: 70% 0 0 50%;
   transform: translate(-50%, -50%);
   color: white;
   font: 3rem enix;
@@ -55,13 +55,8 @@ body, html {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: none;
-  transition: 1s;
-}
-
-.bgColor {
-  transition: 1s;
   background-color: rgba(60, 60, 60, 0.7);
+  transition: 3s;
 }
 
 .navbar li {
