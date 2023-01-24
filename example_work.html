@@ -37,15 +37,37 @@ Last Modified: 01/11/2023
     </div>
 <main>
   <section>
-  <h2>Cad Examples</h2>
-  <p>note: Only one looped video. Others are place holders</p>
-      <video autoplay loop muted playsinline width="80%" height="80%">
-        <source src="assets/gifs/gears.webm" type='video/webm; codecs="vp9"'>
-        <!-- <source src="assets/gifs/gears.mp4" type='video/mp4; codecs"avc1"'> -->
-      </video>
-      <img src="" class="slide" alt="img" width="500" height="300" /> 
-      <img src="" class="slide" alt="img" width="500" height="300" />
-  <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
+    <h2>Cad Examples</h2>
+    <p>note: Only one looped video. Others are place holders</p>
+    <div class="container">
+      <div class="slider">
+        <div class="slider__slides">
+          <div class="slider__slide active">
+            <video autoplay loop muted playsinline width="80%" height="80%">
+              <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            </video>
+          </div>
+          <div class="slider__slide">
+            <img src="" alt="img2" />
+          </div>
+          <div class="slider__slide">
+            <img src="" alt="img3" />
+          </div>
+          <div class="slider__slide">
+            <img src="" alt="img4" />
+          </div>
+        </div>
+        <div id="nav-button--prev" class="slider__nav-button"></div>
+        <div id="nav-button--next" class="slider__nav-button"></div>
+        <div class="slider__nav">
+          <div class="slider__navlink active"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+        </div>
+      </div>
+    </div>
+    <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
   <section>
     <h2>Circuit Board Design</h2>
@@ -61,6 +83,7 @@ Last Modified: 01/11/2023
         <img src="" class="slide" alt="img" width="500" height="300" />
     <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
+<script src="index.js"></script>
 </main>
 
 <br><br>
