@@ -70,7 +70,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: none;
   color: white;
 }
@@ -201,6 +201,7 @@ footer :is(h2,p) {
   }
   
   nav a {
+    font-size: 1.4rem;
     padding:  0.6em;
   }
 
