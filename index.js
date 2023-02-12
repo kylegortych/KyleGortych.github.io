@@ -1,30 +1,31 @@
-let slides = document.getElementsByClassName("slider__slide");
-let navlinks = document.getElementsByClassName("slider__navlink");
-let currentSlide = 0;
+/*
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
 
-document.getElementById("nav-button--next").addEventListener("click", () => {
-    changeSlide(currentSlide + 1)
+listVideo.forEach(video => {
+  video.onclick = () => {
+    listVideo.forEach(vid => vid.classList.remove('active'));
+    video.classList.add('active');
+    if(video.classList.contains('active')) {
+      let src = video.children[0].getAttribute('src');
+      mainVideo.src = src;
+      let text = video.children[1].innerHTML;
+      title.innerHTML = text;
+    };
+  };
 });
-document.getElementById("nav-button--prev").addEventListener("click", () => {
-    changeSlide(currentSlide - 1)
+*/
+
+let listVideos = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideos.forEach(video => {
+  video.addEventListener("click", function() {
+    listVideos.forEach(vid => vid.classList.remove("active"));
+    video.classList.add("active");
+    mainVideo.src = this.querySelector("video source").src;
+    title.innerHTML = this.querySelector(".title").innerHTML;
+  });
 });
-
-function changeSlide(moveTo) {
-    if (moveTo >= slides.length) {moveTo = 0;}
-    if (moveTo < 0) {moveTo = slides.length - 1;}
-    
-    slides[currentSlide].classList.toggle("active");
-    navlinks[currentSlide].classList.toggle("active");
-    slides[moveTo].classList.toggle("active");
-    navlinks[moveTo].classList.toggle("active");
-    
-    currentSlide = moveTo;
-}
-
-document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
-    bullet.addEventListener('click', () => {
-        if (currentSlide !== bulletIndex) {
-            changeSlide(bulletIndex);
-        }
-    })
-})

@@ -6,14 +6,14 @@ Sample cad work webpage
 File name:     cad-work.htm
 Maintainer:    Kyle Gortych
 Created:       05/18/2022
-Last Modified: 01/11/2023
+Last Modified: 02/11/2023
 -->
  
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Cad Work</title>
+  <title>My Work</title>
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,112 +24,76 @@ Last Modified: 01/11/2023
 
 <body>
   <header class="hero-image">
-    <h1 class="hero-text">Gallery of My Work</h1>
+    <h1 class="hero-text">My Work</h1>
   </header>
-    <div class="navbar">
-      <ul>
-        <li><a href="./index">Home</a></li>
-        <li><a href="./example_work">Sample Work</a></li>
-        <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-        <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="Resume">Resume</a></li>
-      </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="./index">Home</a></li>
+      <li><a aria-current="page" href="./example_work">Sample Work</a></li>
+      <li><a href="Resume">Resume</a></li>
+      <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </nav>
 <main>
   <section>
-    <h2>Cad Examples</h2>
+    <h2>Video Gallery</h2>
     <p>note: Only one looped video. Others are place holders</p>
+
     <div class="container">
-      <div class="slider">
-        <div class="slider__slides">
-          <div class="slider__slide active">
-            <video autoplay loop muted playsinline width="80%" height="80%">
-              <source src="assets/gifs/gears.mp4" type='video/mp4'>
-            </video>
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img2" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img3" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img4" />
-          </div>
-        </div>
-        <div id="nav-button--prev" class="slider__nav-button"></div>
-        <div id="nav-button--next" class="slider__nav-button"></div>
-        <div class="slider__nav">
-          <div class="slider__navlink active"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
+
+      <div class="main-video">
+        <div class="video">
+          <video controls muted autoplay loop>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">01. Gears</h3>
         </div>
       </div>
-    </div>
-    <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
-  </section>
-  <section>
-    <h2>Circuit Board Design</h2>
-    <div class="container">
-      <div class="slider">
-        <div class="slider__slides">
-          <div class="slider__slide active">
-            <img src="" alt="img1" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img2" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img3" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img4" />
-          </div>
+
+      <div class="video-list">
+        <div class="vid active">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">01. Gears</h3>
         </div>
-        <div id="nav-button--prev" class="slider__nav-button"></div>
-        <div id="nav-button--next" class="slider__nav-button"></div>
-        <div class="slider__nav">
-          <div class="slider__navlink active"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
+        <div class="vid">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">02. Title</h3>
         </div>
-      </div>
-    </div>
-    <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
-  </section>
-  <section>
-    <h2>Software Examples</h2>
-    <div class="container">
-      <div class="slider">
-        <div class="slider__slides">
-          <div class="slider__slide active">
-            <img src="" alt="img1" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img2" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img3" />
-          </div>
-          <div class="slider__slide">
-            <img src="" alt="img4" />
-          </div>
+        <div class="vid">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">03. Title</h3>
         </div>
-        <div id="nav-button--prev" class="slider__nav-button"></div>
-        <div id="nav-button--next" class="slider__nav-button"></div>
-        <div class="slider__nav">
-          <div class="slider__navlink active"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
+        <div class="vid">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">04. Title</h3>
+        </div>
+        <div class="vid">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">05. Title</h3>
+        </div>
+        <div class="vid">
+          <video muted>
+            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+          </video>
+          <h3 class="title">06. Title</h3>
         </div>
       </div>
+
     </div>
+
     <p>To learn more <a href="url_here" class="links" target="_blank" rel="noopener noreferrer">click here</a></p>
   </section>
-<script src="index.js"></script>
 </main>
 
 <br><br>
@@ -137,8 +101,10 @@ Last Modified: 01/11/2023
 <footer>
   <h2>About Me</h2>
   <p>Hello, this is my static web site. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development. Have a look at some of the work I've done.</p>
-  <p>Maintainer: Kyle Gortych<br>Last Modified: 01/20/2023</p>
+  <p>Maintainer: Kyle Gortych<br>Last Modified: 02/11/2023</p>
 </footer>
+
+<script src="index.js"></script>
 
 </body>
 </html>
