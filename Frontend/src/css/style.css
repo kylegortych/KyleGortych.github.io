@@ -6,7 +6,7 @@
   File name:     style.css
   Maintainer:    Kyle Gortych
   Created:       05-08-2022
-  Last Modified: 01/12/2023
+  Last Modified: 01/13/2024
  */
 
 @font-face {
@@ -22,6 +22,7 @@
 :root {
   --nav-primary: rgba(60, 60, 60, 0.7);
   --nav-sceondary: rgba(240, 240, 240, 0.7);
+  --nav-aria: #1e90ff;
   --hero-primary: rgba(0,0,0,0.5);
 }
 
@@ -33,8 +34,21 @@ body, html {
   background-color: white;
 }
 
+main {
+    position: relative;
+    animation: slide;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyFrames slide {
+    from {left -1000px; top: 0px; opacity: 0;}
+    to {left 0px; top: 0px; opacity: 1;}
+}
+
 .hero-image {
-  background: linear-gradient(var(--hero-primary), var(--hero-primary)), url("../images/hero.webp");
+  background: linear-gradient(var(--hero-primary), var(--hero-primary)), url("../img/hero.webp");
   height: 70%;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,37 +63,82 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
   font: 3rem enix;
+  text-shadow: 4px 4px black;
 }
 
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
   background-color: var(--nav-primary);
-  z-index: 1;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  display: none;
 }
 
 nav a[aria-current="page"] {
-  background-color: var(--nav-sceondary);
-  color: black;
+  border-bottom: 3px solid var(--nav-aria);
 }
 
 nav li {
   list-style: none;
-  padding: 5px;
+  padding: 10px;
 }
 
 nav a {
+  text-align: center;
   font-size: 2rem;
   text-decoration: none;
   color: white;
+  text-shadow: 2px 2px black;
+  transition: 1s;
 }
 
 nav a:hover,
 nav a:focus {
-  background-color: var(--nav-sceondary);
   color: black;
-  transition: 1s;
+  text-shadow: 2px 2px white;
+}
+
+.nav-menu {
+    background-color: var(--nav-primary);
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.nav-menu img {
+    display: block;
+    margin: 30px 0px 50px 15px;
+    width: 70px;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    margin-right: 1.5em;
+}
+
+span {
+    font-size: 50px;
+    color: white;
+    transition: 1s;
+}
+
+span:hover {
+    border-radius: 4px;
+    background: gray;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:checked ~ nav {
+    display: block;
 }
 
 section {
@@ -87,15 +146,24 @@ section {
 }
 
 a {
-  color: red;
-  text-decoration: none;
+    text-decoration: none;
+    color: var(--nav-aria);
+    text-shadow: 1px 1px black;
+    transition: 1s;
 }
 
 a:hover {
-  background-color: #ccc;
+    color: black;
+    text-shadow: 1px 1px var(--nav-aria);
 }
 
 /* playlist */
+
+.main-container {
+    margin-right: auto;
+    margin-left: 100px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -175,35 +243,54 @@ a:hover {
 /* playlist end */
 
 .pdf {
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
-  background: #ccc url("../images/user-icon.webp") no-repeat left center;
+  background: #ccc url("../img/user-icon.webp") no-repeat left center;
   padding: 25px;
 }
 
-footer :is(h2,p) {
+footer :is(h2,p,a) {
   padding-left: 170px;
 }
 
 /* media queries | mobile first*/
 
 @media (min-width: 50em) {
-  nav li {
-    display: inline;
-    margin: 0;
-  }
-  
-  nav a {
-    font-size: 1.4rem;
-    padding:  0.6em;
-  }
+    nav {
+        top: 30px;
+        background: none;
+        display: block;
+    }
+
+    nav li {
+        display: inline;
+    }
+
+    nav a {
+        font-size: 1.7rem;
+        padding:  0.1em;
+    }
+
+    nav h1 {
+        text-align: left;
+    }
+
+    span {
+        display: none;
+    }
 
   /* playlist */
+
+  .main-container {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 2fr 1fr;

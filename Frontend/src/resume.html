@@ -1,0 +1,71 @@
+<!-- 
+  Resume
+  Descript:
+  My resume.pdf
+
+  File name:     resume.html
+  Maintainer:    Kyle Gortych
+  Created:       05/08/2022
+  Last Modified: 01/13/2024
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Resume">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/programmer.webp" type="image/webp" />
+  </head>
+  <body>
+    <header class="hero-image">
+      <h1 class="hero-text">My Resume</h1>
+      <div class="nav-menu">
+        <img src="img/programmer.webp" alt="logo">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sampleWork.html">Sample Work</a></li>
+            <li><a aria-current="page" href="resume.html">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span>≣</span>
+        </label>
+      </div>
+    </header>
+    <main>
+    <div class="pdf">
+      <object
+        data='Sample.pdf'
+        type="application/pdf"
+        width="800"
+        height="878"
+      >
+
+        <iframe
+          src='Sample.pdf'
+          width="800"
+          height="878"
+          sandbox=""
+        >
+        <p>This browser does not support PDF!</p>
+        </iframe>
+      </object>
+    </div>
+    </main>
+    <br><br>
+  <footer>
+    <h2>About Me</h2>
+    <p>Hello, this is my static web site. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development. Have a look at some of the work I've done.</p>
+    <p>Maintainer: Kyle Gortych<br>Last Modified: 01/13/2024</p>
+    <a href="https://www.flaticon.com/free-icons/programmer" title="programmer icons">Programmer icons created by Freepik - Flaticon</a>
+  </footer>
+
+  </body>
+</html>

@@ -6,7 +6,7 @@ Home page
 File name:     index.html
 Maintainer:    Kyle Gortych
 Created:       05/08/2022
-Last Modified: 02/11/2023
+Last Modified: 01/13/2024
 -->
 
 <!DOCTYPE html>
@@ -21,23 +21,30 @@ Last Modified: 02/11/2023
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Current status still under development. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development."/>
-  <link rel="icon" href="assets/images/programmer.webp" type="image/webp" />
-  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <link rel="icon" href="img/programmer.webp" type="image/webp" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
   <header class="hero-image">
     <h1 class="hero-text">My Website</h1>
+    <div class="nav-menu">
+      <img src="img/programmer.webp" alt="logo">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a aria-current="page" href="index.html">Home</a></li>
+          <li><a href="sampleWork.html">Sample Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>≣</span>
+      </label>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a aria-current="page" href="./index">Home</a></li>
-      <li><a href="./example_work">Sample Work</a></li>
-      <li><a href="Resume">Resume</a></li>
-      <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    </ul>
-  </nav>
 <main>
   <section>
     <h2>About This Site</h2>
@@ -45,7 +52,7 @@ Last Modified: 02/11/2023
   </section>
   <br><br>
   <section>
-    <h2>Currently Reading/Studying</h2>
+    <h2>Currently, Reading/Studying</h2>
     <p>Transpiling Python to Rust <a href="https://medium.com/@konchunas/transpiling-python-to-rust-766459b6ab8f" class="links" target="_blank" rel="noopener noreferrer">link</a></p>
     <p>gif like webm loops <a href="https://schnerring.net/blog/use-obs-and-ffmpeg-to-create-gif-like-screencasts/" class="links" target="_blank" rel="noopener noreferrer">link</a></p>
   </section>
@@ -59,7 +66,8 @@ Last Modified: 02/11/2023
   <footer>
     <h2>About Me</h2>
     <p>Hello, this is my static web site. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development. Have a look at some of the work I've done.</p>
-    <p>Maintainer: Kyle Gortych<br>Last Modified: 02/11/2023</p>
+    <p>Maintainer: Kyle Gortych<br>Last Modified: 01/13/2024</p>
+    <a href="https://www.flaticon.com/free-icons/programmer" title="programmer icons">Programmer icons created by Freepik - Flaticon</a>
   </footer>
 
 </body>

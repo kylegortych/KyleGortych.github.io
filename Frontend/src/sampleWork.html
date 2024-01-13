@@ -6,7 +6,7 @@ Sample cad work webpage
 File name:     cad-work.htm
 Maintainer:    Kyle Gortych
 Created:       05/18/2022
-Last Modified: 02/11/2023
+Last Modified: 01/13/2024
 -->
  
 <!DOCTYPE html>
@@ -18,34 +18,43 @@ Last Modified: 02/11/2023
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sample Work">
-  <link rel="icon" href="assets/images/programmer.webp" type="image/webp" />
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="img/programmer.webp" type="image/webp" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="hero-image">
     <h1 class="hero-text">My Work</h1>
+    <div class="nav-menu">
+      <img src="img/programmer.webp" alt="logo">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a aria-current="page"  href="sampleWork.html">Sample Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span>≣</span>
+      </label>
+    </div>
   </header>
-  <nav>
-    <ul>
-      <li><a href="./index">Home</a></li>
-      <li><a aria-current="page" href="./example_work">Sample Work</a></li>
-      <li><a href="Resume">Resume</a></li>
-      <li><a href="https://www.linkedin.com/in/kyle-gortych-163449240/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-      <li><a href="https://github.com/KyleGortych" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-    </ul>
-  </nav>
 <main>
   <section>
     <h2>Video Gallery</h2>
     <p>note: More videos to come.</p>
+
+    <div class="main-container">
 
     <div class="container">
 
       <div class="main-video">
         <div class="video">
           <video controls muted autoplay loop>
-            <source src="assets/gifs/vimEx.mp4" type='video/mp4'>
+            <source src="gifs/vimEx.mp4" type='video/mp4'>
           </video>
           <h3 class="title">01. vim</h3>
         </div>
@@ -54,41 +63,43 @@ Last Modified: 02/11/2023
       <div class="video-list">
         <div class="vid active">
           <video muted>
-            <source src="assets/gifs/vimEx.mp4" type='video/mp4'>
+            <source src="gifs/vimEx.mp4" type='video/mp4'>
           </video>
           <h3 class="title">01. vim</h3>
         </div>
         <div class="vid">
           <video muted>
-            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            <source src="gifs/gears.mp4" type='video/mp4'>
           </video>
           <h3 class="title">02. Blender</h3>
         </div>
         <div class="vid">
           <video muted>
-            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            <source src="gifs/gears.mp4" type='video/mp4'>
           </video>
           <h3 class="title">03. Title</h3>
         </div>
         <div class="vid">
           <video muted>
-            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            <source src="gifs/gears.mp4" type='video/mp4'>
           </video>
           <h3 class="title">04. Title</h3>
         </div>
         <div class="vid">
           <video muted>
-            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            <source src="gifs/gears.mp4" type='video/mp4'>
           </video>
           <h3 class="title">05. Title</h3>
         </div>
         <div class="vid">
           <video muted>
-            <source src="assets/gifs/gears.mp4" type='video/mp4'>
+            <source src="gifs/gears.mp4" type='video/mp4'>
           </video>
           <h3 class="title">06. Title</h3>
         </div>
       </div>
+
+    </div>
 
     </div>
 
@@ -101,10 +112,11 @@ Last Modified: 02/11/2023
 <footer>
   <h2>About Me</h2>
   <p>Hello, this is my static web site. I am a student at MxCC CT majoring in Computer Information Technology(CIT) with a focus on Software Development. Have a look at some of the work I've done.</p>
-  <p>Maintainer: Kyle Gortych<br>Last Modified: 02/11/2023</p>
+  <p>Maintainer: Kyle Gortych<br>Last Modified: 01/13/2024</p>
+  <a href="https://www.flaticon.com/free-icons/programmer" title="programmer icons">Programmer icons created by Freepik - Flaticon</a>
 </footer>
 
-<script src="index.js"></script>
+<script src="pages/index.js"></script>
 
 </body>
 </html>
