@@ -103,8 +103,10 @@ nav a:focus {
     background-color: var(--nav-primary);
     text-align: center;
     position: fixed;
+    top: 0px;
     z-index: 2;
     width: 100%;
+    transition: top 1s;
 }
 
 .nav-menu img {
