@@ -1,0 +1,14 @@
+RewriteEngine On
+Options ALL -Indexes
+Header add Content-Security-Policy "default-src 'self';"
+Header set X-Frame-Options Deny
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+RewriteRule ^.*/assets/.*$ - [R=403]
+RewriteRule ^.*/.htaccess - [R=403]
+RewriteRule ^.*/README.md - [R=403]
+RewriteRule ^.*/LICENSE - [R=403]
+
+<Files .htaccess> order allow,deny deny from all </Files>
